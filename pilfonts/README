@@ -1,0 +1,277 @@
+$Id: //modules/pilfonts/README#1 $
+
+a collection of Courier and Helvetica bitmap fonts for the Python
+Imaging Library (PIL), derived from 100dpi fonts shipped with the
+X Window system.  See below for copyrights on individual fonts.
+
+example:
+
+        import Image, ImageDraw, ImageFont
+
+        im = Image.new("RGB", (200, 200), "white")
+        draw = ImageDraw.Draw(im)
+
+        font = ImageFont.load("helvR14.pil")
+
+        draw.text((10, 10), "hello", font=font, fill="red")
+
+        im.show()
+
+--------------------------------------------------------------------
+Charter Medium 
+
+normal (R), italic (I)
+
+charR08.pil: -Bitstream-Charter-Medium-R-Normal--11-80-100-100-P-61-ISO8859-1
+charR10.pil: -Bitstream-Charter-Medium-R-Normal--14-100-100-100-P-78-ISO8859-1
+charR12.pil: -Bitstream-Charter-Medium-R-Normal--17-120-100-100-P-95-ISO8859-1
+charR14.pil: -Bitstream-Charter-Medium-R-Normal--19-140-100-100-P-106-ISO8859-1
+charR18.pil: -Bitstream-Charter-Medium-R-Normal--25-180-100-100-P-139-ISO8859-1
+charR24.pil: -Bitstream-Charter-Medium-R-Normal--33-240-100-100-P-183-ISO8859-1
+charI08.pil: -Bitstream-Charter-Medium-I-Normal--11-80-100-100-P-60-ISO8859-1
+charI10.pil: -Bitstream-Charter-Medium-I-Normal--14-100-100-100-P-76-ISO8859-1
+charI12.pil: -Bitstream-Charter-Medium-I-Normal--17-120-100-100-P-92-ISO8859-1
+charI14.pil: -Bitstream-Charter-Medium-I-Normal--19-140-100-100-P-103-ISO8859-1
+charI18.pil: -Bitstream-Charter-Medium-I-Normal--25-180-100-100-P-136-ISO8859-1
+charI24.pil: -Bitstream-Charter-Medium-I-Normal--33-240-100-100-P-179-ISO8859-1
+
+Copyright 1987 by Bitstream Inc. Charter Registered trademark of
+Bitstream Inc.
+
+--------------------------------------------------------------------
+Courier
+
+normal (R), oblique (O), bold (B), bold oblique (BO)
+
+courR08.pil: -Adobe-Courier-Medium-R-Normal--11-80-100-100-M-60-ISO8859-1
+courR10.pil: -Adobe-Courier-Medium-R-Normal--14-100-100-100-M-90-ISO8859-1
+courR12.pil: -Adobe-Courier-Medium-R-Normal--17-120-100-100-M-100-ISO8859-1
+courR14.pil: -Adobe-Courier-Medium-R-Normal--20-140-100-100-M-110-ISO8859-1
+courR18.pil: -Adobe-Courier-Medium-R-Normal--25-180-100-100-M-150-ISO8859-1
+courR24.pil: -Adobe-Courier-Medium-R-Normal--34-240-100-100-M-200-ISO8859-1
+courO08.pil: -Adobe-Courier-Medium-O-Normal--11-80-100-100-M-60-ISO8859-1
+courO10.pil: -Adobe-Courier-Medium-O-Normal--14-100-100-100-M-90-ISO8859-1
+courO12.pil: -Adobe-Courier-Medium-O-Normal--17-120-100-100-M-100-ISO8859-1
+courO14.pil: -Adobe-Courier-Medium-O-Normal--20-140-100-100-M-110-ISO8859-1
+courO18.pil: -Adobe-Courier-Medium-O-Normal--25-180-100-100-M-150-ISO8859-1
+courO24.pil: -Adobe-Courier-Medium-O-Normal--34-240-100-100-M-200-ISO8859-1
+courB08.pil: -Adobe-Courier-Bold-R-Normal--11-80-100-100-M-60-ISO8859-1
+courB10.pil: -Adobe-Courier-Bold-R-Normal--14-100-100-100-M-90-ISO8859-1
+courB12.pil: -Adobe-Courier-Bold-R-Normal--17-120-100-100-M-100-ISO8859-1
+courB14.pil: -Adobe-Courier-Bold-R-Normal--20-140-100-100-M-110-ISO8859-1
+courB18.pil: -Adobe-Courier-Bold-R-Normal--25-180-100-100-M-150-ISO8859-1
+courB24.pil: -Adobe-Courier-Bold-R-Normal--34-240-100-100-M-200-ISO8859-1
+courBO08.pil: -Adobe-Courier-Bold-O-Normal--11-80-100-100-M-60-ISO8859-1
+courBO10.pil: -Adobe-Courier-Bold-O-Normal--14-100-100-100-M-90-ISO8859-1
+courBO12.pil: -Adobe-Courier-Bold-O-Normal--17-120-100-100-M-100-ISO8859-1
+courBO14.pil: -Adobe-Courier-Bold-O-Normal--20-140-100-100-M-110-ISO8859-1
+courBO18.pil: -Adobe-Courier-Bold-O-Normal--25-180-100-100-M-150-ISO8859-1
+courBO24.pil: -Adobe-Courier-Bold-O-Normal--34-240-100-100-M-200-ISO8859-1
+
+Copyright (c) 1987 Adobe Systems, Inc., Portions Copyright 1988
+Digital Equipment Corp.
+
+--------------------------------------------------------------------
+Helvetica
+
+normal (R), oblique (O), bold (B), bold oblique (BO)
+
+helvR08.pil: -Adobe-Helvetica-Medium-R-Normal--11-80-100-100-P-56-ISO8859-1
+helvR10.pil: -Adobe-Helvetica-Medium-R-Normal--14-100-100-100-P-76-ISO8859-1
+helvR12.pil: -Adobe-Helvetica-Medium-R-Normal--17-120-100-100-P-88-ISO8859-1
+helvR14.pil: -Adobe-Helvetica-Medium-R-Normal--20-140-100-100-P-100-ISO8859-1
+helvR18.pil: -Adobe-Helvetica-Medium-R-Normal--25-180-100-100-P-130-ISO8859-1
+helvR24.pil: -Adobe-Helvetica-Medium-R-Normal--34-240-100-100-P-176-ISO8859-1
+helvO08.pil: -Adobe-Helvetica-Medium-O-Normal--11-80-100-100-P-57-ISO8859-1
+helvO10.pil: -Adobe-Helvetica-Medium-O-Normal--14-100-100-100-P-78-ISO8859-1
+helvO12.pil: -Adobe-Helvetica-Medium-O-Normal--17-120-100-100-P-88-ISO8859-1
+helvO14.pil: -Adobe-Helvetica-Medium-O-Normal--20-140-100-100-P-98-ISO8859-1
+helvO18.pil: -Adobe-Helvetica-Medium-O-Normal--25-180-100-100-P-130-ISO8859-1
+helvO24.pil: -Adobe-Helvetica-Medium-O-Normal--34-240-100-100-P-176-ISO8859-1
+helvB08.pil: -Adobe-Helvetica-Bold-R-Normal--11-80-100-100-P-60-ISO8859-1
+helvB10.pil: -Adobe-Helvetica-Bold-R-Normal--14-100-100-100-P-82-ISO8859-1
+helvB12.pil: -Adobe-Helvetica-Bold-R-Normal--17-120-100-100-P-92-ISO8859-1
+helvB14.pil: -Adobe-Helvetica-Bold-R-Normal--20-140-100-100-P-105-ISO8859-1
+helvB18.pil: -Adobe-Helvetica-Bold-R-Normal--25-180-100-100-P-138-ISO8859-1
+helvB24.pil: -Adobe-Helvetica-Bold-R-Normal--34-240-100-100-P-182-ISO8859-1
+helvBO08.pil: -Adobe-Helvetica-Bold-O-Normal--11-80-100-100-P-60-ISO8859-1
+helvBO10.pil: -Adobe-Helvetica-Bold-O-Normal--14-100-100-100-P-82-ISO8859-1
+helvBO12.pil: -Adobe-Helvetica-Bold-O-Normal--17-120-100-100-P-92-ISO8859-1
+helvBO14.pil: -Adobe-Helvetica-Bold-O-Normal--20-140-100-100-P-103-ISO8859-1
+helvBO18.pil: -Adobe-Helvetica-Bold-O-Normal--25-180-100-100-P-138-ISO8859-1
+helvBO24.pil: -Adobe-Helvetica-Bold-O-Normal--34-240-100-100-P-182-ISO8859-1
+
+Copyright (c) 1987 Adobe Systems, Inc., Portions Copyright 1988
+Digital Equipment Corp.
+
+--------------------------------------------------------------------
+Lucida
+
+normal (RS), italic (IS), bold (BS), bold italic (BIS)
+
+luRS08.pil: -B&H-Lucida-Medium-R-Normal-Sans-11-80-100-100-P-63-ISO8859-1
+luRS10.pil: -B&H-Lucida-Medium-R-Normal-Sans-14-100-100-100-P-80-ISO8859-1
+luRS12.pil: -B&H-Lucida-Medium-R-Normal-Sans-17-120-100-100-P-96-ISO8859-1
+luRS14.pil: -B&H-Lucida-Medium-R-Normal-Sans-20-140-100-100-P-114-ISO8859-1
+luRS18.pil: -B&H-Lucida-Medium-R-Normal-Sans-25-180-100-100-P-142-ISO8859-1
+luRS19.pil: -B&H-Lucida-Medium-R-Normal-Sans-26-190-100-100-P-147-ISO8859-1
+luRS24.pil: -B&H-Lucida-Medium-R-Normal-Sans-34-240-100-100-P-191-ISO8859-1
+luIS08.pil: -B&H-Lucida-Medium-I-Normal-Sans-11-80-100-100-P-62-ISO8859-1
+luIS10.pil: -B&H-Lucida-Medium-I-Normal-Sans-14-100-100-100-P-80-ISO8859-1
+luIS12.pil: -B&H-Lucida-Medium-I-Normal-Sans-17-120-100-100-P-97-ISO8859-1
+luIS14.pil: -B&H-Lucida-Medium-I-Normal-Sans-20-140-100-100-P-114-ISO8859-1
+luIS18.pil: -B&H-Lucida-Medium-I-Normal-Sans-25-180-100-100-P-141-ISO8859-1
+luIS19.pil: -B&H-Lucida-Medium-I-Normal-Sans-26-190-100-100-P-147-ISO8859-1
+luIS24.pil: -B&H-Lucida-Medium-I-Normal-Sans-34-240-100-100-P-192-ISO8859-1
+luBIS08.pil: -B&H-Lucida-Bold-I-Normal-Sans-11-80-100-100-P-69-ISO8859-1
+luBIS10.pil: -B&H-Lucida-Bold-I-Normal-Sans-14-100-100-100-P-90-ISO8859-1
+luBIS12.pil: -B&H-Lucida-Bold-I-Normal-Sans-17-120-100-100-P-108-ISO8859-1
+luBIS14.pil: -B&H-Lucida-Bold-I-Normal-Sans-20-140-100-100-P-127-ISO8859-1
+luBIS18.pil: -B&H-Lucida-Bold-I-Normal-Sans-25-180-100-100-P-159-ISO8859-1
+luBIS19.pil: -B&H-Lucida-Bold-I-Normal-Sans-26-190-100-100-P-166-ISO8859-1
+luBIS24.pil: -B&H-Lucida-Bold-I-Normal-Sans-34-240-100-100-P-215-ISO8859-1
+luBS08.pil: -B&H-Lucida-Bold-R-Normal-Sans-11-80-100-100-P-70-ISO8859-1
+luBS10.pil: -B&H-Lucida-Bold-R-Normal-Sans-14-100-100-100-P-89-ISO8859-1
+luBS12.pil: -B&H-Lucida-Bold-R-Normal-Sans-17-120-100-100-P-108-ISO8859-1
+luBS14.pil: -B&H-Lucida-Bold-R-Normal-Sans-20-140-100-100-P-127-ISO8859-1
+luBS18.pil: -B&H-Lucida-Bold-R-Normal-Sans-25-180-100-100-P-158-ISO8859-1
+luBS19.pil: -B&H-Lucida-Bold-R-Normal-Sans-26-190-100-100-P-166-ISO8859-1
+luBS24.pil: -B&H-Lucida-Bold-R-Normal-Sans-34-240-100-100-P-216-ISO8859-1
+
+lubR08.pil: -B&H-LucidaBright-Medium-R-Normal--11-80-100-100-P-63-ISO8859-1
+lubR10.pil: -B&H-LucidaBright-Medium-R-Normal--14-100-100-100-P-80-ISO8859-1
+lubR12.pil: -B&H-LucidaBright-Medium-R-Normal--17-120-100-100-P-96-ISO8859-1
+lubR14.pil: -B&H-LucidaBright-Medium-R-Normal--20-140-100-100-P-114-ISO8859-1
+lubR18.pil: -B&H-LucidaBright-Medium-R-Normal--25-180-100-100-P-142-ISO8859-1
+lubR19.pil: -B&H-LucidaBright-Medium-R-Normal--26-190-100-100-P-149-ISO8859-1
+lubR24.pil: -B&H-LucidaBright-Medium-R-Normal--34-240-100-100-P-193-ISO8859-1
+lubI08.pil: -B&H-LucidaBright-Medium-I-Normal--11-80-100-100-P-63-ISO8859-1
+lubI10.pil: -B&H-LucidaBright-Medium-I-Normal--14-100-100-100-P-80-ISO8859-1
+lubI12.pil: -B&H-LucidaBright-Medium-I-Normal--17-120-100-100-P-96-ISO8859-1
+lubI14.pil: -B&H-LucidaBright-Medium-I-Normal--20-140-100-100-P-113-ISO8859-1
+lubI18.pil: -B&H-LucidaBright-Medium-I-Normal--25-180-100-100-P-142-ISO8859-1
+lubI19.pil: -B&H-LucidaBright-Medium-I-Normal--26-190-100-100-P-148-ISO8859-1
+lubI24.pil: -B&H-LucidaBright-Medium-I-Normal--34-240-100-100-P-194-ISO8859-1
+lubB08.pil: -B&H-LucidaBright-DemiBold-R-Normal--11-80-100-100-P-66-ISO8859-1
+lubB10.pil: -B&H-LucidaBright-DemiBold-R-Normal--14-100-100-100-P-84-ISO8859-1
+lubB12.pil: -B&H-LucidaBright-DemiBold-R-Normal--17-120-100-100-P-101-ISO8859-1
+lubB14.pil: -B&H-LucidaBright-DemiBold-R-Normal--20-140-100-100-P-118-ISO8859-1
+lubB18.pil: -B&H-LucidaBright-DemiBold-R-Normal--25-180-100-100-P-149-ISO8859-1
+lubB19.pil: -B&H-LucidaBright-DemiBold-R-Normal--26-190-100-100-P-155-ISO8859-1
+lubB24.pil: -B&H-LucidaBright-DemiBold-R-Normal--34-240-100-100-P-202-ISO8859-1
+lubBI08.pil: -B&H-LucidaBright-DemiBold-I-Normal--11-80-100-100-P-66-ISO8859-1
+lubBI10.pil: -B&H-LucidaBright-DemiBold-I-Normal--14-100-100-100-P-84-ISO8859-1
+lubBI12.pil: -B&H-LucidaBright-DemiBold-I-Normal--17-120-100-100-P-101-ISO8859-1
+lubBI14.pil: -B&H-LucidaBright-DemiBold-I-Normal--20-140-100-100-P-119-ISO8859-1
+lubBI18.pil: -B&H-LucidaBright-DemiBold-I-Normal--25-180-100-100-P-149-ISO8859-1
+lubBI19.pil: -B&H-LucidaBright-DemiBold-I-Normal--26-190-100-100-P-156-ISO8859-1
+lubBI24.pil: -B&H-LucidaBright-DemiBold-I-Normal--34-240-100-100-P-203-ISO8859-1
+
+lutRS08.pil: -B&H-LucidaTypewriter-Medium-R-Normal-Sans-11-80-100-100-M-70-ISO8859-1
+lutRS10.pil: -B&H-LucidaTypewriter-Medium-R-Normal-Sans-14-100-100-100-M-80-ISO8859-1
+lutRS12.pil: -B&H-LucidaTypewriter-Medium-R-Normal-Sans-17-120-100-100-M-100-ISO8859-1
+lutRS14.pil: -B&H-LucidaTypewriter-Medium-R-Normal-Sans-20-140-100-100-M-120-ISO8859-1
+lutRS18.pil: -B&H-LucidaTypewriter-Medium-R-Normal-Sans-25-180-100-100-M-150-ISO8859-1
+lutRS19.pil: -B&H-LucidaTypewriter-Medium-R-Normal-Sans-26-190-100-100-M-159-ISO8859-1
+lutRS24.pil: -B&H-LucidaTypewriter-Medium-R-Normal-Sans-34-240-100-100-M-200-ISO8859-1
+lutBS08.pil: -B&H-LucidaTypewriter-Bold-R-Normal-Sans-11-80-100-100-M-70-ISO8859-1
+lutBS10.pil: -B&H-LucidaTypewriter-Bold-R-Normal-Sans-14-100-100-100-M-80-ISO8859-1
+lutBS12.pil: -B&H-LucidaTypewriter-Bold-R-Normal-Sans-17-120-100-100-M-100-ISO8859-1
+lutBS14.pil: -B&H-LucidaTypewriter-Bold-R-Normal-Sans-20-140-100-100-M-120-ISO8859-1
+lutBS18.pil: -B&H-LucidaTypewriter-Bold-R-Normal-Sans-25-180-100-100-M-150-ISO8859-1
+lutBS19.pil: -B&H-LucidaTypewriter-Bold-R-Normal-Sans-26-190-100-100-M-159-ISO8859-1
+lutBS24.pil: -B&H-LucidaTypewriter-Bold-R-Normal-Sans-34-240-100-100-M-200-ISO8859-1
+
+Copyright Bigelow & Holmes 1986, 1985.
+
+--------------------------------------------------------------------
+New Century Schoolbook
+
+normal (R), italic (I), bold (B), bold italic (BI)
+
+ncenR08.pil: -Adobe-New Century Schoolbook-Medium-R-Normal--11-80-100-100-P-60-ISO8859-1
+ncenR10.pil: -Adobe-New Century Schoolbook-Medium-R-Normal--14-100-100-100-P-82-ISO8859-1
+ncenR12.pil: -Adobe-New Century Schoolbook-Medium-R-Normal--17-120-100-100-P-91-ISO8859-1
+ncenR14.pil: -Adobe-New Century Schoolbook-Medium-R-Normal--20-140-100-100-P-103-ISO8859-1
+ncenR18.pil: -Adobe-New Century Schoolbook-Medium-R-Normal--25-180-100-100-P-136-ISO8859-1
+ncenR24.pil: -Adobe-New Century Schoolbook-Medium-R-Normal--34-240-100-100-P-181-ISO8859-1
+ncenI08.pil: -Adobe-New Century Schoolbook-Medium-I-Normal--11-80-100-100-P-60-ISO8859-1
+ncenI10.pil: -Adobe-New Century Schoolbook-Medium-I-Normal--14-100-100-100-P-81-ISO8859-1
+ncenI12.pil: -Adobe-New Century Schoolbook-Medium-I-Normal--17-120-100-100-P-92-ISO8859-1
+ncenI14.pil: -Adobe-New Century Schoolbook-Medium-I-Normal--20-140-100-100-P-104-ISO8859-1
+ncenI18.pil: -Adobe-New Century Schoolbook-Medium-I-Normal--25-180-100-100-P-136-ISO8859-1
+ncenI24.pil: -Adobe-New Century Schoolbook-Medium-I-Normal--34-240-100-100-P-182-ISO8859-1
+ncenB08.pil: -Adobe-New Century Schoolbook-Bold-R-Normal--11-80-100-100-P-66-ISO8859-1
+ncenB10.pil: -Adobe-New Century Schoolbook-Bold-R-Normal--14-100-100-100-P-87-ISO8859-1
+ncenB12.pil: -Adobe-New Century Schoolbook-Bold-R-Normal--17-120-100-100-P-99-ISO8859-1
+ncenB14.pil: -Adobe-New Century Schoolbook-Bold-R-Normal--20-140-100-100-P-113-ISO8859-1
+ncenB18.pil: -Adobe-New Century Schoolbook-Bold-R-Normal--25-180-100-100-P-149-ISO8859-1
+ncenB24.pil: -Adobe-New Century Schoolbook-Bold-R-Normal--34-240-100-100-P-193-ISO8859-1
+ncenBI08.pil: -Adobe-New Century Schoolbook-Bold-I-Normal--11-80-100-100-P-66-ISO8859-1
+ncenBI10.pil: -Adobe-New Century Schoolbook-Bold-I-Normal--14-100-100-100-P-88-ISO8859-1
+ncenBI12.pil: -Adobe-New Century Schoolbook-Bold-I-Normal--17-120-100-100-P-99-ISO8859-1
+ncenBI14.pil: -Adobe-New Century Schoolbook-Bold-I-Normal--20-140-100-100-P-111-ISO8859-1
+ncenBI18.pil: -Adobe-New Century Schoolbook-Bold-I-Normal--25-180-100-100-P-148-ISO8859-1
+ncenBI24.pil: -Adobe-New Century Schoolbook-Bold-I-Normal--34-240-100-100-P-193-ISO8859-1
+
+Copyright (c) 1987 Adobe Systems, Inc., Portions Copyright 1988
+Digital Equipment Corp.
+
+--------------------------------------------------------------------
+Symbol
+
+symb08.pil: -Adobe-Symbol-Medium-R-Normal--11-80-100-100-P-61-ADOBE-FONTSPECIFIC
+symb10.pil: -Adobe-Symbol-Medium-R-Normal--14-100-100-100-P-85-ADOBE-FONTSPECIFIC
+symb12.pil: -Adobe-Symbol-Medium-R-Normal--17-120-100-100-P-95-ADOBE-FONTSPECIFIC
+symb14.pil: -Adobe-Symbol-Medium-R-Normal--20-140-100-100-P-107-ADOBE-FONTSPECIFIC
+symb18.pil: -Adobe-Symbol-Medium-R-Normal--25-180-100-100-P-142-ADOBE-FONTSPECIFIC
+symb24.pil: -Adobe-Symbol-Medium-R-Normal--34-240-100-100-P-191-ADOBE-FONTSPECIFIC
+
+Copyright (c) 1987 Adobe Systems, Inc., Portions Copyright 1988
+Digital Equipment Corp.
+
+--------------------------------------------------------------------
+Terminal
+
+term14.pil: -Bitstream-Terminal-Medium-R-Normal--18-140-100-100-C-110-ISO8859-1
+termB14.pil: -Bitstream-Terminal-Bold-R-Normal--18-140-100-100-C-110-ISO8859-1
+
+tech14.pil: -Bitstream-Terminal-Medium-R-Normal--18-140-100-100-C-110-DEC-DECtech
+techB14.pil: -Bitstream-Terminal-Bold-R-Normal--18-140-100-100-C-110-DEC-DECtech
+
+Copyright (c) 1988 Bitstream, Inc., Portions copyright 1988 Digital
+Equipment Corp.
+
+--------------------------------------------------------------------
+Times
+
+normal (R), italic (I), bold (B), bold italic (BI)
+
+timR08.pil: -Adobe-Times-Medium-R-Normal--11-80-100-100-P-54-ISO8859-1
+timR10.pil: -Adobe-Times-Medium-R-Normal--14-100-100-100-P-74-ISO8859-1
+timR12.pil: -Adobe-Times-Medium-R-Normal--17-120-100-100-P-84-ISO8859-1
+timR14.pil: -Adobe-Times-Medium-R-Normal--20-140-100-100-P-96-ISO8859-1
+timR18.pil: -Adobe-Times-Medium-R-Normal--25-180-100-100-P-125-ISO8859-1
+timR24.pil: -Adobe-Times-Medium-R-Normal--34-240-100-100-P-170-ISO8859-1
+timI08.pil: -Adobe-Times-Medium-I-Normal--11-80-100-100-P-52-ISO8859-1
+timI10.pil: -Adobe-Times-Medium-I-Normal--14-100-100-100-P-73-ISO8859-1
+timI12.pil: -Adobe-Times-Medium-I-Normal--17-120-100-100-P-84-ISO8859-1
+timI14.pil: -Adobe-Times-Medium-I-Normal--20-140-100-100-P-94-ISO8859-1
+timI18.pil: -Adobe-Times-Medium-I-Normal--25-180-100-100-P-125-ISO8859-1
+timI24.pil: -Adobe-Times-Medium-I-Normal--34-240-100-100-P-168-ISO8859-1
+timB08.pil: -Adobe-Times-Bold-R-Normal--11-80-100-100-P-57-ISO8859-1
+timB10.pil: -Adobe-Times-Bold-R-Normal--14-100-100-100-P-76-ISO8859-1
+timB12.pil: -Adobe-Times-Bold-R-Normal--17-120-100-100-P-88-ISO8859-1
+timB14.pil: -Adobe-Times-Bold-R-Normal--20-140-100-100-P-100-ISO8859-1
+timB18.pil: -Adobe-Times-Bold-R-Normal--25-180-100-100-P-132-ISO8859-1
+timB24.pil: -Adobe-Times-Bold-R-Normal--34-240-100-100-P-177-ISO8859-1
+timBI08.pil: -Adobe-Times-Bold-I-Normal--11-80-100-100-P-57-ISO8859-1
+timBI10.pil: -Adobe-Times-Bold-I-Normal--14-100-100-100-P-77-ISO8859-1
+timBI12.pil: -Adobe-Times-Bold-I-Normal--17-120-100-100-P-86-ISO8859-1
+timBI14.pil: -Adobe-Times-Bold-I-Normal--20-140-100-100-P-98-ISO8859-1
+timBI18.pil: -Adobe-Times-Bold-I-Normal--25-180-100-100-P-128-ISO8859-1
+timBI24.pil: -Adobe-Times-Bold-I-Normal--34-240-100-100-P-170-ISO8859-1
+
+Copyright (c) 1987 Adobe Systems, Inc., Portions Copyright 1988
+Digital Equipment Corp.
+
