@@ -18,7 +18,7 @@ One caveat is that by default Linux will not create the serial device with permi
 
 ## Basic Software Setup
 
-This program is written in Python (2.x) and uses the [PIL Imaging library](http://www.pythonware.com/products/pil/) (or [Pillow](https://python-pillow.github.io/)) for image manipulation and the PySerial package for serial communcations. PIL or Pillow are part of almost any Linux distro and are available as installersfor other systems, too. PySerial can be installed through [pip](https://pypi.python.org/pypi/pip).
+This program is written in Python (2.x) and uses the [PIL Imaging library](http://www.pythonware.com/products/pil/) (or [Pillow](https://python-pillow.github.io/)) for image manipulation and the PySerial package for serial communcations. PIL or Pillow are part of almost any Linux distro and are available as installers for other systems, too. PySerial can be installed through [pip](https://pypi.python.org/pypi/pip).
 
 ## Usage
 
@@ -63,11 +63,11 @@ Text is just interpreted as text. There are different fonts in the `pilfonts` fo
 
     python ledbadge.py speed=5 effect=left font=pilfonts/luRS08.pil "This is luRS08." font=pilfonts/ncenBI08.pil "This is ncenBI08."
 
-An interesting question is what happens with text that is longer than the display, especially for up or down effects. By default the text is just at the end of the display, which can lead to partial letters being displayed:
+An interesting question is what happens with text that is longer than the display, especially for up or down effects. By default the text is just cut at the end of the display, which can lead to partial letters being displayed:
 
     python ledbadge.py speed=5 effect=up "No wrap makes this a bad text."
 
-The alternative is to wrap the text at the letter, to avoid partial letters:
+The alternative is to wrap the text at the letter level, to avoid partial letters:
 
     python ledbadge.py speed=5 effect=up wrap=char "No wrap makes this a bad text."
 
@@ -87,20 +87,20 @@ Other examples:
     python ledbadge.py speed=5 effect=left "White on black" invert=on "Black on white"
 
 
-Other options:
+Other options that need documentation:
 
-blink=on|off
-marquee=on|off
-invert=on|off
-halign=left|center|center-right|right
-valign=top|middle|middle-down|bottom
+* blink=on|off
+* marquee=on|off
+* invert=on|off
+* halign=left|center|center-right|right
+* valign=top|middle|middle-down|bottom
 
 
 ## Other Links
 
-http://www.daveakerman.com/?p=1440
-https://bitbucket.org/bartj/led
-http://zunkworks.com/projects/programmablelednamebadges/
+* [http://www.daveakerman.com/?p=1440]
+* [https://bitbucket.org/bartj/led]
+* [http://zunkworks.com/projects/programmablelednamebadges/]
 
 
 ## Copyrights
