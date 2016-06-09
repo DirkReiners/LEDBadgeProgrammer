@@ -2,7 +2,7 @@
 
 ## Word of warning
 
-If you come here through google and are looking for a nice graphical system to program your badge, sorry, this is not the software you are looking for. It only has a command-line interface and was primarily developed for Linux. It should still work on Windows, but only with the right USB-serial driver installed. 
+If you come here through google and are looking for a nice graphical system to program your badge, sorry, this is not the software you are looking for. It only has a command-line interface and was primarily developed for Linux. It should still work on Windows, but only with the right USB-serial driver installed (see [Windows](#windows) for details). 
 
 ## Intro
 
@@ -18,7 +18,7 @@ One caveat is that by default Linux will not create the serial device with permi
 
 ## Basic Software Setup
 
-This program is written in Python (2.x) and uses the [PIL Imaging library](http://www.pythonware.com/products/pil/) (or [Pillow](https://python-pillow.github.io/)) for image manipulation and the PySerial package for serial communcations. PIL or Pillow are part of almost any Linux distro and are available as installers for other systems, too. PySerial can be installed through [pip](https://pypi.python.org/pypi/pip).
+This program is written in Python (2.x) and uses the [PIL Imaging library](http://www.pythonware.com/products/pil/) (or [Pillow](https://python-pillow.github.io/)) for image manipulation and the [PySerial](https://pypi.python.org/pypi/pyserial) package for serial communcations. PIL or Pillow are part of almost any Linux distro and are available as installers for other systems, too. PySerial can be installed through [pip](https://pypi.python.org/pypi/pip).
 
 ## Usage
 
@@ -40,7 +40,6 @@ And that already shows the basic use of the program. Just add all the things tha
     
 To make it more interesting you can set the transition effect:
 
-
     python ledbadge.py effect=left "If you can see the corners this is working:" test_12x48.png "Did you see them?"
     
 or a little faster, leaving the image standing still
@@ -53,7 +52,7 @@ That covers the basics, see below for more options. Enjoy!
 
 The program understands a few standard command line options.`--width` and `--height` specify the size of the badge. The only options that we've seen were 44x11 or 48x12, the default is 48x12. The only other option is `-p` (or `--port`) to specify the dev to use for the device (default `/dev/ttyUSB0`).
 
-All other controlling options are passed as `<key>=<value>` pairs interspresed with the items to display.
+All other controlling options are passed as `<key>=<value>` pairs interspersed with the items to display.
 
 The items to display can be images or text. Images that are too high will be cut be off, images that are not high enough will be padded. Images should be white on black. They can be inverted by using the `invert=on` option, if needed.
 
@@ -96,11 +95,23 @@ Other options that need documentation:
 * valign=top|middle|middle-down|bottom
 
 
+## Windows
+
+You can run this program on Windows just like on Linux, but you also need to run it from the command line. Install [Python](http://www.python.org) and use [PIP](https://pip.pypa.io/en/stable/installing/) to install PySerial and PIP or Pillow. In addition to those you also need to install the USB-Serial driver that makes the badge accessible as a COM port. You can get it from the [manufacturer's website](http://www.prolific.com.tw/US/ShowProduct.aspx?p_id=225&pcid=41). Don't forget to reboot after installation or it might not work.
+
+You will need to specify the correct COM port using the -p options to make it write to the badge, but other than that you should be fine.
+
+
 ## Other Links
 
 * [http://www.daveakerman.com/?p=1440]
 * [https://bitbucket.org/bartj/led]
 * [http://zunkworks.com/projects/programmablelednamebadges/]
+
+
+## Acknowledgements
+
+* Thanks to Raphael for the Windows input and testing!
 
 
 ## Copyrights
