@@ -1,6 +1,10 @@
 # LED Name Badge Programmer
 
-## Word of warning
+## Word of warning!
+
+There are several versions of LED badges that look almost identical, but have incompatible programming models, and sometimes the same Amazon seller changes the model without changing the Amazon page... The program here was developed for badges that use a mini-USB connection and have two buttons in the back. As of right now I can't find these on Amazon any more. :( If I find time I'll try to update the program to support newer badges, but I have no prediction when that will happen. Sorry!
+
+## Word of warning (2)
 
 If you come here through google and are looking for a nice graphical system to program your badge, sorry, this is not the software you are looking for. It only has a command-line interface and was primarily developed for Linux. It should still work on Windows, but only with the right USB-serial driver installed (see [Windows](#windows) for details). 
 
